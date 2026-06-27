@@ -282,7 +282,7 @@ section{
 }
 .envelope{
   position: relative;
-  aspect-ratio: 3/2;
+  aspect-ratio: 4/5;
   background: linear-gradient(160deg, var(--bordo-prof), #3a0a14);
   border: 1px solid rgba(212,161,74,.45);
   border-radius: 10px;
@@ -336,15 +336,18 @@ section{
   display:flex;
   align-items:center;
   justify-content:center;
-  padding: 1rem;
+  text-align:center;
+  padding: .8rem;
   font-family: var(--serif);
-  font-size: clamp(.95rem, 3.5vw, 1.15rem);
+  font-size: clamp(.85rem, 3vw, 1.05rem);
+  line-height: 1.4;
   color: var(--texto);
   background: rgba(20,4,8,.96);
   opacity:0;
   transform: scale(.9);
   transition: opacity .6s .3s, transform .6s .3s;
   z-index:4;
+  overflow-y:auto; /* garante a frase inteira mesmo se ficar apertado */
 }
 .envelope.aberto .aba{ transform: rotateX(180deg); }
 .envelope.aberto .selo{ transform: translate(-50%,-50%) scale(0); opacity:0; }
