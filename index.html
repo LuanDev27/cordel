@@ -276,13 +276,13 @@ section{
 /* ============================================================= */
 .cartas-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.8rem;
   margin-top: 2rem;
 }
 .envelope{
   position: relative;
-  aspect-ratio: 4/5;
+  min-height: clamp(210px, 58vw, 260px);
   background: linear-gradient(160deg, var(--bordo-prof), #3a0a14);
   border: 1px solid rgba(212,161,74,.45);
   border-radius: 10px;
