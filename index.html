@@ -616,7 +616,7 @@ section{
 <!-- 1. ABERTURA                                                  -->
 <!-- ============================================================ -->
 <section id="abertura">
-  <h1 id="nome-dela" aria-label="Nome"></h1>
+  <h1 id="nome-dela" aria-label="Nome">Karla</h1>
   <p class="frase-impacto">
     Karla, eu escrevi este lugar inteiro só pra dizer, do meu jeito,
     o que o meu peito repete em silêncio toda vez que você aparece.
@@ -829,7 +829,7 @@ construir uma casa cheia de risadas — a nossa,
 com você, comigo, e com os nossos dois pequenos sonhos correndo pela sala.
 
 Obrigado por dizer sim ao nosso para sempre.
-Eu te amo, Karla, hoje e por todos os dias que vierem. 🌹`
+Karla, hoje e por todos os dias que vierem. 🌹`
 };
 
 /* ============================================================= */
@@ -846,6 +846,7 @@ function vibrar(ms){ try{ if(navigator.vibrate) navigator.vibrate(ms); }catch(e)
 (function montarNome(){
   const el = document.getElementById('nome-dela');
   const nome = CONFIG.NOME_DELA;
+  el.textContent = '';            // limpa o texto de reserva antes de animar
   [...nome].forEach((ch, i)=>{
     const span = document.createElement('span');
     span.className = 'letra';
